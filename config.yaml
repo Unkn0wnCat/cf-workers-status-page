@@ -28,3 +28,17 @@ monitors:
     url: 'https://1in9.net'
     method: GET
     expectStatus: 200
+
+  - id: strueker-dev
+    name: strueker.dev
+    description: ''
+    url: 'https://strueker.dev/de/'
+    method: GET
+    expectStatus: 200
+
+  - id: strueker-net
+    name: strueker.net
+    description: ''
+    url: 'https://strueker.net'
+    method: GET
+    expectStatus: 200
