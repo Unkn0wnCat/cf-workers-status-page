@@ -2,7 +2,7 @@ settings:
   title: 'Status Page'
   url: 'https://status.kevink.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 90 # number of days you want to display in histogram
+  daysInHistogram: 30 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: 'All Systems Operational'
@@ -40,5 +40,12 @@ monitors:
     name: strueker.net
     description: ''
     url: 'https://strueker.net'
+    method: GET
+    expectStatus: 200
+
+  - id: esg-iserv
+    name: elsensee.schule
+    description: ''
+    url: 'https://elsensee.schule/iserv/app/login'
     method: GET
     expectStatus: 200
